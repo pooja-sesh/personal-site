@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+  
+
   html {
     background-color: #F7EDE2;
     font-family: "Raleway";
@@ -9,8 +11,11 @@
 
   body {
     margin: 0px;
+    height: 100vh;
   }
 
+
+  @media all and (min-width: 501px) {
   .container {
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr;
@@ -35,16 +40,12 @@
     display: flex;
     gap: 38px;
     align-items: center;
-    /* padding-top: 3rem;
-    padding-bottom: 3rem; */
     justify-content: flex-end;
   }
 
   .sidebar {
     grid-area: sidebar;
-    /* padding-top: 11rem; */
-    /*padding-right: 2rem;
-    /*align-self: center; */
+    padding-right: 8rem;
   }
 
   .icon-container {
@@ -67,19 +68,13 @@
     grid-area: horizontal-line;
     align-self: center;
     padding-left: 0.8rem;
-    /* padding-top: 3rem;
-    padding-bottom: 3rem; */
-    /* justify-self: center; */
   }
 
   .vl {
     border-right: 1px solid #583939;
-    /* background-color: aqua; */
     height: 38vh;
     margin-right: 15px;
     margin-bottom: 16px;
-    /* margin-right: 15px;
-    margin-bottom: 30px; */
   }
 
   hr {
@@ -90,9 +85,14 @@
     margin: 1em 0;
     padding: 0;
   }
+}
 
   svg {
     color: #583939;
+  }
+
+  svg:hover {
+    color: #F28482;
   }
 
   h1 {
@@ -107,4 +107,62 @@
   a {
     text-decoration: none;
     color: #583939;
+  }
+
+  a:hover {
+    color: #F28482;
+  }
+
+  @media all and (max-width: 500px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100vh;
+    }
+
+    .content {
+      padding-top: 3rem;
+      padding-left: 6rem;
+      padding-right: 4rem;
+    }
+
+    .header:nth-child(1) {
+      display: none;
+    }
+    
+    /* .vl:nth-child(1) {
+      display: none;
+    } */
+
+    /* .sidebar:nth-child(1) {
+      display: none;
+    } */
+
+    /* .icon-container:nth-child(1) {
+      display: none;
+    } */
+
+    .sidebar {
+      text-align: center;
+    }
+
+    .mobile-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .horizontal-line {
+      display: none;
+    }
+
+    .desktop-break {
+      display: none;
+    }
+
+    .footer {
+      text-align: center;
+      /* margin-top: auto; */
+    }
   }
