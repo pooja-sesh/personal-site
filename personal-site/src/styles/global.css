@@ -259,6 +259,8 @@
       width: 65vw; 
       position: absolute;
       height: 100vh;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
     }
 
     .hamburger-menu:has(input:checked) + .sidebar-mobile {
