@@ -174,9 +174,9 @@
     }
 
     :root {
-      --bar-width: 50px;
+      --bar-width: 45px;
       --bar-height: 2px;
-      --hamburger-gap: 14px;
+      --hamburger-gap: 12px;
       --foreground: #583939;
       --background: #F28482; 
       --hamburger-margin: 8px;
@@ -222,7 +222,7 @@
       top: var(--hamburger-margin);
       left: var(--hamburger-margin);
       z-index: 2;
-      padding-left: 3rem;
+      padding-left: 2rem;
       padding-top: 3rem;
     }
 
